@@ -150,4 +150,132 @@ check50
     checks correctness of code
     check50 hello
 
-stopped lecture at 52:22
+Only click on hello.c, not hello
+
+ls
+    shorthand for "list"
+    files with and * are executable files with ./filename
+
+rm 
+    remove 
+
+mv
+    mv hello.c goodbye.c
+        move the first file to the second file
+    mv hello.c ..  => move one dir up
+
+mkdir
+    make directory
+
+. current dir
+.. parent dir
+
+cp
+    copy 
+
+Data Types
+    bool
+    char
+    double
+    flaot
+    int
+    long
+    string
+    ...
+
+function
+    get_char
+    get_double
+    get_float
+    get_int
+    get_long
+    get_string
+    ...
+
+Each datatype has a finite number of bits
+
+ints only use 32 bits
+    long goes up to 64 bits
+
+float uses 32 bits
+    double uses 64
+
+Placeholders
+    %c char
+    %f float
+    %i int
+    %li long int
+    %s string
+
+Operators
+    +
+    -
+    *
+    /
+    %
+
+
+create new files of source code with .c at the end
+addition.c
+
+-----
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int x = get_int("x: ");
+    
+    int y = get_int("y: ");
+
+    printf("%i\n", x + y);
+}
+
+
+----
+run
+make addition
+
+
+-----
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    long x = get_long("x: ");
+    
+    long y = get_long("y: ");
+
+    printf("%li\n", x + y);
+}
+
+
+----
+
+
+truncation.c
+
+------
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int x = get_int("x: ");
+    int y = get_int("y: ");
+
+    float z = (float) x / (float) y;
+    printf("%f\n", z);
+}
+
+----
+
+int / int 
+    the expression will eliminate decimal points 
+
+casting
+    convert data type to another dt
+    (newDataType) data
