@@ -285,3 +285,76 @@ casting
 
     float z = (float) x / (float) y;
     printf("%f\n", z);
+
+counter = counter + 1;
+counter += 1;
+  syntactic sugar
+  also
+    counter++
+
+if (x < y) 
+{
+  printf("x is less than y\n")
+}
+
+if (x < y) 
+{
+  printf("x is less than y\n")
+}
+else
+{
+  printf("x is not less than y\n")
+}
+
+
+if (x == y)
+
+== 
+  equality comparision 
+
+
+------
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+  //prompt user for x
+    int x = get_int("x: ");
+
+  //prompt user for y
+    int y = get_int("y: ");
+
+  //Compare x and y
+  if (x < y) 
+  {
+    printf("x is less than y\n")
+  }
+  else if (x > y)
+  {
+    printf("x is greater than y\n")
+  }
+  else 
+  {
+    printf("x is equal to y\n")
+  }
+
+}
+
+----  
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+  char c = get_char("Do you agree? ");
+  if (c = "y")
+  {
+    printf("Agreed.\n")
+  }
+  else if (c = "n")
+  {
+    printf("Not agreed.")
+  }
+}
